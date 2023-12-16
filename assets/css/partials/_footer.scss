@@ -1,0 +1,30 @@
+footer {
+    background-color: $azul;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    p {
+        font-size: 1.4rem;
+        font-family: 'Montserrat bold';
+    }
+    .left {
+        .redes {
+            img {
+                width: 35px;
+                padding: .5rem;
+            }
+        }
+    }
+}
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {
+    footer {
+        display: flex;
+        padding: 2rem 2rem;
+        .right {
+            margin-left: 40%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {}

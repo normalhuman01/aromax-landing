@@ -1,0 +1,116 @@
+header {
+    background-image: url("../img/header-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 1085px;
+    padding: 1rem 1rem;
+    .logo {
+        width: 25%;
+        img {
+            width: 100%;
+        }
+    }
+    .texto-header {
+        width: 100%;
+        padding: 2rem 0 5rem 0;
+        h1 {
+            font-family: 'Montserrat bold';
+            line-height: 1;
+            color: $azul;
+            text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+        }
+        p {
+            font-family: 'Montserrat bold';
+            color: $azul;
+            margin-bottom: 65%;
+            width: 70%;
+        }
+    }
+    .form-contact form input, textarea{
+        width: 100%;
+        border: 0;
+        border-bottom: 1px solid $azul;
+        border-radius: 1rem;
+        padding: 0 0.7rem;
+        font-family: $tipografia;
+    }
+    .form-contact {
+        background-color: rgba($color: #fff, $alpha: .6);
+        padding: 2rem 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        button {
+            background-color: $azul;
+            color: #fff;
+            padding: .2rem;
+            border-radius: 0.5rem;
+            width: 100%;
+            margin: .5rem 0 0 0;
+            font-family: $tipografia;
+            font-size: 1rem;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {
+    header {
+        .texto-header {
+            h1 {
+                font-size: 2.9rem;
+                margin: 0 6rem;
+            }
+        }
+        .form-contact {
+            margin: 6rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    header {
+        background-image: url("../img/banner1.png");
+        background-position: left;
+        height: 140vh;
+        .logo {
+            width: 13%;
+        }
+        .wrapper {
+            padding: 1rem 0 0 3rem;
+            display: flex;
+            .texto-header {
+                width: 55%;
+                margin: 0;
+                padding-right: 2rem;
+                h1 {
+                    margin: 0
+                }
+                p {
+                    margin: 1rem 0;
+                    width: 100%;
+                }
+            }
+            .form-contact {
+                margin: 0 2rem 0 0;
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    header {
+        .wrapper {
+            .texto-header {
+                padding: 5rem 0rem 5rem 0;
+                width: 55%;
+                h1 {
+                    font-size: 3.4rem;
+                    padding-right: 6rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+

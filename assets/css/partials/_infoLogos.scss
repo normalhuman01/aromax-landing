@@ -1,0 +1,35 @@
+.info-logos {
+    background-color: $gris;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    font-weight: bold;
+    .logo {
+        width: 33%;
+        text-align: center;
+        img {
+            width: 33%;
+        }
+        p {
+            font-size: .5rem;
+            line-height: 1.3;
+            color: $azul;
+        }
+    }
+}
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (min-width: 992px) {
+    .info-logos {
+        .logo {
+            img {
+                width: 15%;
+            }
+            p {
+                font-size: .9rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1300px) {}
